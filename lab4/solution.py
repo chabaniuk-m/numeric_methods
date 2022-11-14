@@ -30,6 +30,7 @@ def newton_method(x_0: np.array, func, derivative, epsilon: float) -> np.array:
     return x
 
 
+# actually this method cannot be applied in many cases
 def modified_newton_method(x_0: np.array, func, derivative, epsilon: float) -> np.array:
     x = x_0
     a = np.linalg.inv(derivative(x))
